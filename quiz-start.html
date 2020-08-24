@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style-quiz-start.css">
+    <script type="text/javascript">
+        window.history.forward();
+        function noBack()
+        {
+            window.history.forward();
+        }
+    </script>
     <script src="javascript/javascript-quiz-start.js"></script> 
     <title>QuizzieMania-Live</title>
 </head>
-<body>
+<body onLoad="noBack();" onpageshow="if (event.persisted) noBack();" onUnload="">
     <header class="header">
         <h1 id="qiuz_header"><img id="imgs" src="image/logo.gif">QuizzieMania</h1>
-        <h1> General Quiz Level-1</h1>
+        <h1 id="general"> General Quiz Level-1</h1>
     </header>
     <div class="main-content">
 

@@ -4,6 +4,12 @@
         <meta charset="UTF-1">
         <meta name="viewport" content="width=device-width , initial-scale = 1.0" >
         <link rel="stylesheet" href="css/quiz-reattend.css">
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+            pass_2=localStorage.getItem("student_name");
+            document.getElementById("qiuz_header").innerHTML="QuizzieMania - Sorry "+pass_2;
+            });
+        </script>
         <title>QuizzieMania - Sorry !</title>
     </head>
     <body>
