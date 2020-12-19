@@ -99,3 +99,28 @@ body{
     height: 15px;
     width: 15px;
 }
+
+
+
+@media only screen and (max-width:500px){
+    .header{
+        display: flex;
+        flex-direction: column;
+        background-color: grey;
+        height: 120px;
+        justify-content: center;
+        align-items: center;
+        position: sticky;
+        top: 0;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        background-color: brown;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+        position: sticky;
+        bottom: 0;
+    }
+}
