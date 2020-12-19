@@ -1,10 +1,19 @@
 var x,y,z;
 var count=0,snd;
 
-var end=0;
+var end=0,tab=0,keypress=0;
+
+var user,seconds=1200;
 
 document.addEventListener("DOMContentLoaded", function() {
 var pass=localStorage.getItem("email_id");
+user=localStorage.getItem("user_attempt");
+if(user>=1){
+    document.getElementById("btn-start").style.visibility="hidden";
+    alert("You have already attempted the Quiz");
+}
+user++;
+localStorage.setItem("user_attempt",user);
 document.getElementById("h11").innerHTML=pass;
 });
 
@@ -27,6 +36,9 @@ function start(){
     }
     else{
         localStorage.setItem("student_name",x);
+        localStorage.setItem("time_start",tab);
+        localStorage.setItem("clock",seconds);
+        localStorage.setItem("keypress",keypress);
         document.getElementById("studname").style.border="solid 3px green";
         count++;
     }
@@ -55,7 +67,8 @@ function start(){
     }
     if(count==3){
         end=1;
-        window.open("quiz-start.html","_self");
+        document.getElementById("btn-start").style.visibility="hidden";
+        window.open("quiz-start.html","","toolbar=no");
     }
     count=0;
 }

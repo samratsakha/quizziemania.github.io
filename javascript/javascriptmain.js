@@ -5,6 +5,8 @@ var end=0;
 
 var pass_email;
 
+var user_attempt=0;
+
 
 function start_quiz(){
     snd=document.getElementById("aud");
@@ -16,6 +18,7 @@ function start_quiz(){
     y=/[a-z A-Z 0-9]{8,20}/;
     if(x.test(email)){
         localStorage.setItem("email_id",email);
+        localStorage.setItem("user_attempt",user_attempt);
         document.getElementById("email").style.border="solid 4px green";
         z++;
     }
