@@ -5,17 +5,40 @@ var end=0,tab=0,keypress=0;
 
 var user,seconds=1200;
 
+var acct=0;
+
+var started;
+
 document.addEventListener("DOMContentLoaded", function() {
 var pass=localStorage.getItem("email_id");
 user=localStorage.getItem("user_attempt");
 if(user>=1){
     document.getElementById("btn-start").style.visibility="hidden";
+    document.getElementById("ready").innerHTML="You have already taken the Quiz";
     alert("You have already attempted the Quiz");
+    started=1;
+    localStorage.setItem("started",started);
+}
+else{
+    started=0;
+    localStorage.setItem("started",started);
 }
 user++;
 localStorage.setItem("user_attempt",user);
 document.getElementById("h11").innerHTML=pass;
 });
+
+
+function accepted(){
+    if(acct==0){
+        document.getElementById("cheq").checked=true;
+        acct=1;
+    }
+    else{
+        document.getElementById("cheq").checked=false;
+        acct=0;
+    }
+}
 
 function start(){
     x=document.getElementById("studname").value;
@@ -57,7 +80,7 @@ function start(){
         count++;
     }
     if(z==true){
-        document.getElementById("apt").style.color="white";
+        document.getElementById("apt").style.color="green";
         count++;
     }
     else{
@@ -68,7 +91,7 @@ function start(){
     if(count==3){
         end=1;
         document.getElementById("btn-start").style.visibility="hidden";
-        window.open("quiz-start.html","","toolbar=no");
+        window.open("quiz-start.html","newWin", "width="+screen.availWidth+",height="+screen.availHeight);
     }
     count=0;
 }

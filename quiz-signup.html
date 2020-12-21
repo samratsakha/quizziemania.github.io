@@ -4,6 +4,7 @@
         <meta charset="UTF-1">
         <meta name="viewport" content="width=device-width , initial-scale = 1.0" >
         <link rel="stylesheet" href="css/style.css">
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
         <script type="text/javascript">
             window.history.forward();
             function noBack()
@@ -22,9 +23,11 @@
         <div class="main-content">
         <h2 class="body_texts">Welcome to QuizzieMania !</h2><br>
         <h2 class="body_texts">Enter your E-mail and Password to Attend the Quiz</h2><br>
-        <h3 class="body_fill">Email : <input id="email" placeholder="Enter your E-mail id" type="email"></h3><br>
-        <h3 class="body_fill" >Password : <input id="password" placeholder="Enter your Password" type="password"></h3><br> <br>
-        <button class="body_fill" id="accept" onclick="start_quiz()" >Attend the Quiz</button>
+        <h3 class="body_fill">Email : <input id="email" placeholder="Enter your E-mail id" type="email"></h3>
+        <button id="otp-btn" onclick="sendotp()">Get OTP</button>
+        <h3 class="body_fill" >Enter OTP : <input id="password" placeholder="Enter your OTP" type="password"></h3><br> <br>
+        <button class="body_fill" id="accept" onclick="start_quiz()">Attend Quiz</button><br><br>
+        <a href="instructions.html" target="_blank" id="ins"><h2>Instructions</h2></a>
         </div>
         
 

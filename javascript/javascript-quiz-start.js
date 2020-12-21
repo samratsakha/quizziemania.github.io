@@ -12,12 +12,27 @@ var real_sec;
 
 var time_switch_before,time_switch_back,total_time;
 
+var acct=0;
+
+var started;    
+
+var resizing;
 
 
 // Local Storage Configuration
 document.addEventListener("DOMContentLoaded", function() {
+    started=localStorage.getItem("started");
+    if(started!=0){
+        end=1;
+        window.open("quiz-entry.html","_self");
+    }
+    else{
+        started=1;
+        localStorage.setItem("started",started);
+    }
     pass_2=localStorage.getItem("student_name");
     tab=localStorage.getItem("time_start");
+    resizing=tab;
     real_sec=localStorage.getItem("clock");
     keypress=localStorage.getItem("keypress");
     document.getElementById("general").innerHTML=" General Quiz - "+pass_2;
@@ -36,7 +51,11 @@ window.addEventListener('keydown', (event) => {
             window.open("quiz-reattend.html","_self","toolbar=no");
         }
         localStorage.setItem("keypress",keypress);
-        alert("Don't use Keyboard");
+        document.getElementsByTagName("BODY")[0].style.display = "none";
+        setTimeout(function(){
+            alert("Don't use Keyboard");
+            document.getElementsByTagName("BODY")[0].style.display = "block";
+        }, 100);
     }
 });
 
@@ -45,6 +64,14 @@ document.addEventListener('contextmenu',function(e) {
     e.preventDefault();
 });
 
+
+// Cut and Copy Configuration
+document.addEventListener('copy',function(e) {
+    e.preventDefault();
+});
+document.addEventListener('cut',function(e) {
+    e.preventDefault();
+});
 
 
 // Tab switching Configuration
@@ -75,6 +102,26 @@ document.addEventListener("visibilitychange",function (){
     }
     
 });
+
+
+// Window Resized
+function resized(){
+    document.getElementsByTagName("BODY")[0].style.display = "none";
+    setTimeout(function(){
+        alert("Don't resize the window");
+        document.getElementsByTagName("BODY")[0].style.display = "block";
+    }, 100);
+    resizing++;
+    if(resizing==2){
+            end=1;
+            resizing=0;
+            localStorage.setItem("resizing",resizing);
+            window.open("quiz-reattend.html","_self","toolbar=no");
+    }
+    localStorage.setItem("resizing",resizing);
+}
+
+window.onresize = resized;
 
 
 //Timer Settings Configuration
@@ -153,6 +200,18 @@ function func(){
         alert("Accept the above Condition");
     }
     mark=0;
+}
+
+// Terms and conditions Checked state
+function accepted(){
+    if(acct==0){
+        document.getElementById("cheq").checked=true;
+        acct=1;
+    }
+    else{
+        document.getElementById("cheq").checked=false;
+        acct=0;
+    }
 }
 
 // Page Reload Configuration
