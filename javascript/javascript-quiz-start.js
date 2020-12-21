@@ -18,6 +18,8 @@ var started;
 
 var resizing;
 
+var h,w;
+
 
 // Local Storage Configuration
 document.addEventListener("DOMContentLoaded", function() {
@@ -105,6 +107,9 @@ document.addEventListener("visibilitychange",function (){
 
 
 // Window Resized
+h=screen.availHeight;
+w=screen.availWidth;
+if(w>=500){
 function resized(){
     document.getElementsByTagName("BODY")[0].style.display = "none";
     setTimeout(function(){
@@ -119,6 +124,12 @@ function resized(){
             window.open("quiz-reattend.html","_self","toolbar=no");
     }
     localStorage.setItem("resizing",resizing);
+}
+}
+else{
+    function resized(){
+        //Do Nothing
+    }
 }
 
 window.onresize = resized;
