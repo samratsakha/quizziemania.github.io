@@ -24,14 +24,6 @@
         <audio id="aud">
             <source src="sound/alert.mp3" type="audio/mpeg">
         </audio>
-          
-        <!-- Certificate Invisible AutoForm --->
-        <form action="https://api.sheetmonkey.io/form/rrdWSuTLTy4hVMZpVCRz4x" method="post" id="inv-form">
-            <!-- Put HTML input fields in here and see how they fill up your sheet -->
-             <input type="text" name="Name" id="name-field" style="visibility: hidden;" required />
-             <input type="text" name="Email" id="email-field" style="visibility: hidden;" required />
-             <input type="text" name="Institution" id="institution-field" style="visibility: hidden;" required />
-          </form>
 
 
         <footer class="footer">
@@ -41,26 +33,7 @@
     </body>
     <script>
 
-        var stud_name,clg_name,eml_id;
-        var certificate_num;
-
-        stud_name=localStorage.getItem("student_name");
-        clg_name=localStorage.getItem("clg_name");
-        eml_id=localStorage.getItem("email_id");
-
         document.addEventListener("DOMContentLoaded", function() {
-
-        certificate_num=localStorage.getItem("certificate");
-        if(certificate_num==0){
-            document.getElementById("name-field").value=stud_name;
-            document.getElementById("email-field").value=eml_id;
-            document.getElementById("institution-field").value=clg_name;
-            document.getElementById("inv-form").submit();
-            certificate_num=1;
-        }
-        else{
-            alert("Certificate already sent to your Email-ID");
-        }
         pass_2=localStorage.getItem("student_name");
         document.getElementById("qiuz_header").innerHTML="QuizzieMania - Congratulations "+pass_2;
         });

@@ -20,7 +20,7 @@ var resizing;
 
 var h,w;
 
-var certificate_num;
+var stud_name,clg_name,eml_id;
 
 
 // Local Storage Configuration
@@ -34,6 +34,9 @@ document.addEventListener("DOMContentLoaded", function() {
         started=1;
         localStorage.setItem("started",started);
     }
+    stud_name=localStorage.getItem("student_name");
+    clg_name=localStorage.getItem("clg_name");
+    eml_id=localStorage.getItem("email_id");
     pass_2=localStorage.getItem("student_name");
     tab=localStorage.getItem("time_start");
     resizing=tab;
@@ -153,9 +156,11 @@ function rendertime(){
 
     if(mark>=15){
         end=1;
-        certificate_num=0;
-        localStorage.setItem("certificate",certificate_num);
-        window.open("quiz-congrats.html","_self","toolbar=no");
+        document.getElementById("name-field").value=stud_name;
+        document.getElementById("email-field").value=eml_id;
+        document.getElementById("institution-field").value=clg_name;
+        document.getElementById("inv-form").submit();
+        //window.open("quiz-congrats.html","_self","toolbar=no");
     }
     else{
         end=1;
@@ -202,9 +207,11 @@ function func(){
         document.getElementById("apt").style.color="green";
         if(mark>=15){
             end=1;
-            certificate_num=0;
-            localStorage.setItem("certificate",certificate_num);
-            window.open("quiz-congrats.html","_self");
+            document.getElementById("name-field").value=stud_name;
+            document.getElementById("email-field").value=eml_id;
+            document.getElementById("institution-field").value=clg_name;
+            document.getElementById("inv-form").submit();
+            //window.open("quiz-congrats.html","_self");
         }
         else{
             end=1;
