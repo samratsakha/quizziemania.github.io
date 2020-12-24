@@ -1,1 +1,116 @@
-var _0x5c07=["","\x72\x61\x6E\x64\x6F\x6D","\x66\x6C\x6F\x6F\x72","\x61\x75\x64","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x76\x61\x6C\x75\x65","\x65\x6D\x61\x69\x6C","\x74\x65\x73\x74","\x70\x6C\x61\x79","\x4F\x54\x50\x20\x61\x6C\x72\x65\x61\x64\x79\x20\x73\x65\x6E\x74\x20\x74\x6F\x20\x2D\x20","\x65\x6D\x61\x69\x6C\x5F\x69\x64","\x73\x65\x74\x49\x74\x65\x6D","\x4F\x54\x50\x20\x68\x61\x73\x20\x62\x65\x65\x6E\x20\x73\x65\x6E\x74\x20\x74\x6F\x20\x79\x6F\x75\x72\x20\x45\x6D\x61\x69\x6C\x2D\x49\x44","\x74\x68\x65\x6E","\x73\x6D\x74\x70\x2E\x67\x6D\x61\x69\x6C\x2E\x63\x6F\x6D","\x71\x75\x69\x7A\x7A\x69\x65\x6D\x61\x6E\x69\x61\x40\x67\x6D\x61\x69\x6C\x2E\x63\x6F\x6D","\x73\x61\x6D\x72\x61\x74\x73\x79\x65\x64\x6B\x70\x71\x38\x34\x32","\x51\x75\x69\x7A\x7A\x69\x65\x4D\x61\x6E\x69\x61\x20\x2D\x20\x4F\x6E\x65\x20\x54\x69\x6D\x65\x20\x50\x61\x73\x73\x77\x6F\x72\x64","\x59\x6F\x75\x72\x20\x4F\x54\x50\x20\x66\x6F\x72\x20\x74\x61\x6B\x69\x6E\x67\x20\x75\x70\x20\x74\x68\x65\x20\x51\x75\x69\x7A\x20\x69\x6E\x20\x51\x75\x69\x7A\x7A\x69\x65\x4D\x61\x6E\x69\x61\x20\x69\x73\x20","\x2E\x20\x44\x6F\x20\x6E\x6F\x74\x20\x73\x68\x61\x72\x65\x20\x79\x6F\x75\x72\x20\x4F\x54\x50\x20\x77\x69\x74\x68\x20\x61\x6E\x79\x6F\x6E\x65\x2E\x3C\x62\x72\x3E\x48\x61\x70\x70\x79\x20\x51\x75\x69\x7A\x7A\x69\x6E\x67\x20\x2D\x20\x51\x75\x69\x7A\x7A\x69\x65\x4D\x61\x6E\x69\x61","\x73\x65\x6E\x64","\x75\x73\x65\x72\x5F\x61\x74\x74\x65\x6D\x70\x74","\x62\x6F\x72\x64\x65\x72","\x73\x74\x79\x6C\x65","\x73\x6F\x6C\x69\x64\x20\x34\x70\x78\x20\x67\x72\x65\x65\x6E","\x45\x6E\x74\x65\x72\x20\x61\x20\x56\x61\x6C\x69\x64\x20\x45\x2D\x6D\x61\x69\x6C","\x73\x6F\x6C\x69\x64\x20\x36\x70\x78\x20\x72\x65\x64","\x70\x61\x73\x73\x77\x6F\x72\x64","\x74\x72\x69\x6D","\x45\x6E\x74\x65\x72\x20\x59\x6F\x75\x72\x20\x4F\x54\x50","\x71\x75\x69\x7A\x2D\x65\x6E\x74\x72\x79\x2E\x68\x74\x6D\x6C","\x5F\x73\x65\x6C\x66","\x6F\x70\x65\x6E","\x45\x6E\x74\x65\x72\x20\x74\x68\x65\x20\x63\x6F\x72\x72\x65\x63\x74\x20\x4F\x54\x50","\x6F\x6E\x62\x65\x66\x6F\x72\x65\x75\x6E\x6C\x6F\x61\x64","\x72\x65\x6C\x6F\x61\x64","\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x41\x72\x65\x20\x79\x6F\x75\x20\x73\x75\x72\x65"];var pwd,email,x,y,snd;var end=0;var pass_email;var user_attempt=0;var turn1,turn2,turn3,turn4;var otpfinal,temp_mail=_0x5c07[0];function otpgenerator(){turn1= Math[_0x5c07[1]]()* 10;turn1= Math[_0x5c07[2]](turn1);turn2= Math[_0x5c07[1]]()* 10;turn2= Math[_0x5c07[2]](turn2);turn3= Math[_0x5c07[1]]()* 10;turn3= Math[_0x5c07[2]](turn3);turn4= Math[_0x5c07[1]]()* 10;turn4= Math[_0x5c07[2]](turn4);if(turn1== 0){turn1= 1};if(turn2== 0){turn2= 1};if(turn3== 0){turn3= 1};if(turn4== 0){turn4= 1};otpfinal= (turn1* 1000)+ (turn2* 100)+ (turn3* 10)+ (turn4* 1)}function sendotp(){snd= document[_0x5c07[4]](_0x5c07[3]);email= document[_0x5c07[4]](_0x5c07[6])[_0x5c07[5]];x= /^([a-z A-Z 0-9 \.-]+)@([a-z A-Z 0-9 -]+)\.([a-z]{2,10})(.[a-z]{2,10})?$/;if(x[_0x5c07[7]](email)){if(email== temp_mail){snd[_0x5c07[8]]();alert(_0x5c07[9]+ email)}else {temp_mail= email;localStorage[_0x5c07[11]](_0x5c07[10],email);otpgenerator();Email[_0x5c07[20]]({Host:_0x5c07[14],Username:_0x5c07[15],Password:_0x5c07[16],To:email,From:_0x5c07[15],Subject:_0x5c07[17],Body:_0x5c07[18]+ otpfinal+ _0x5c07[19]})[_0x5c07[13]]((_0xa165x11)=>{return alert(_0x5c07[12])});localStorage[_0x5c07[11]](_0x5c07[21],user_attempt);document[_0x5c07[4]](_0x5c07[6])[_0x5c07[23]][_0x5c07[22]]= _0x5c07[24]}}else {snd[_0x5c07[8]]();alert(_0x5c07[25]);document[_0x5c07[4]](_0x5c07[6])[_0x5c07[23]][_0x5c07[22]]= _0x5c07[26]}}function start_quiz(){snd= document[_0x5c07[4]](_0x5c07[3]);pwd= document[_0x5c07[4]](_0x5c07[27])[_0x5c07[5]];if(pwd[_0x5c07[28]]()== _0x5c07[0]){snd[_0x5c07[8]]();alert(_0x5c07[29]);document[_0x5c07[4]](_0x5c07[27])[_0x5c07[23]][_0x5c07[22]]= _0x5c07[26]}else {if(pwd[_0x5c07[28]]()== otpfinal){document[_0x5c07[4]](_0x5c07[27])[_0x5c07[23]][_0x5c07[22]]= _0x5c07[24];end= 1;window[_0x5c07[32]](_0x5c07[30],_0x5c07[31])}else {snd[_0x5c07[8]]();alert(_0x5c07[33]);document[_0x5c07[4]](_0x5c07[27])[_0x5c07[23]][_0x5c07[22]]= _0x5c07[26]}}}window[_0x5c07[34]]= function(_0xa165x13){if(end== 1){window[_0x5c07[36]][_0x5c07[35]](false)}else {return _0x5c07[37]}}
+
+var pwd,email,x,y,snd;
+
+var end=0;
+
+var pass_email;
+
+var user_attempt=0;
+
+var turn1,turn2,turn3,turn4;
+
+var otpfinal,temp_mail="";
+
+
+
+function otpgenerator(){
+    turn1 = Math.random() * 10;
+    turn1 = Math.floor(turn1);
+    turn2 = Math.random() * 10;
+    turn2 = Math.floor(turn2);
+    turn3 = Math.random() * 10;
+    turn3 = Math.floor(turn3);
+    turn4 = Math.random() * 10;
+    turn4 = Math.floor(turn4);
+    if(turn1==0){
+        turn1=1;
+    }
+    if(turn2==0){
+        turn2=1;
+    }
+    if(turn3==0){
+        turn3=1;
+    }
+    if(turn4==0){
+        turn4=1;
+    }
+    otpfinal=(turn1*1000)+(turn2*100)+(turn3*10)+(turn4*1);
+}
+
+
+
+function sendotp(){
+
+    snd=document.getElementById("aud");
+    email=document.getElementById("email").value;
+
+
+    x=/^([a-z A-Z 0-9 \.-]+)@([a-z A-Z 0-9 -]+)\.([a-z]{2,10})(.[a-z]{2,10})?$/;
+    if(x.test(email)){
+        if(email==temp_mail){
+            snd.play();
+            alert("OTP already sent to - "+email);
+        }
+        else{
+        temp_mail=email;
+        localStorage.setItem("email_id",email);
+
+        otpgenerator();
+
+        Email.send({
+            Host : "smtp.gmail.com",
+            Username : "quizziemania@gmail.com",
+            Password : "samratsyedkpq842",
+            To : email,
+            From : "quizziemania@gmail.com",
+            Subject : "QuizzieMania - One Time Password",
+            Body : "Your OTP for taking up the Quiz in QuizzieMania is "+ otpfinal + ". Do not share your OTP with anyone.<br>Happy Quizzing - QuizzieMania"
+        }).then(
+          message => alert("OTP has been sent to your Email-ID")
+        );
+        
+        localStorage.setItem("user_attempt",user_attempt);
+        document.getElementById("email").style.border="solid 4px green";
+        }
+    }
+    else{
+        snd.play();
+        alert("Enter a Valid E-mail");
+        document.getElementById("email").style.border="solid 6px red";
+    }
+  }
+
+
+
+
+
+function start_quiz(){
+    snd=document.getElementById("aud");
+    pwd=document.getElementById("password").value;
+    if(pwd.trim()==""){
+        snd.play();
+        alert("Enter Your OTP");
+        document.getElementById("password").style.border="solid 6px red";
+    }
+    else if(pwd.trim()==otpfinal){
+        document.getElementById("password").style.border="solid 4px green";
+        end=1;
+        window.open("quiz-entry.html","_self");
+    }
+    else{
+        snd.play();
+        alert("Enter the correct OTP");
+        document.getElementById("password").style.border="solid 6px red";
+    }
+}
+
+
+window.onbeforeunload = function(e) {
+    if(end==1){
+      window.location.reload(false); 
+    }
+    else{
+        return "Are you sure";
+    }
+};
+

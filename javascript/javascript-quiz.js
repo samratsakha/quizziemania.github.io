@@ -1,1 +1,107 @@
-var _0x882b=["\x44\x4F\x4D\x43\x6F\x6E\x74\x65\x6E\x74\x4C\x6F\x61\x64\x65\x64","\x65\x6D\x61\x69\x6C\x5F\x69\x64","\x67\x65\x74\x49\x74\x65\x6D","\x75\x73\x65\x72\x5F\x61\x74\x74\x65\x6D\x70\x74","\x76\x69\x73\x69\x62\x69\x6C\x69\x74\x79","\x73\x74\x79\x6C\x65","\x62\x74\x6E\x2D\x73\x74\x61\x72\x74","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x68\x69\x64\x64\x65\x6E","\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C","\x72\x65\x61\x64\x79","\x59\x6F\x75\x20\x68\x61\x76\x65\x20\x61\x6C\x72\x65\x61\x64\x79\x20\x74\x61\x6B\x65\x6E\x20\x74\x68\x65\x20\x51\x75\x69\x7A","\x59\x6F\x75\x20\x68\x61\x76\x65\x20\x61\x6C\x72\x65\x61\x64\x79\x20\x61\x74\x74\x65\x6D\x70\x74\x65\x64\x20\x74\x68\x65\x20\x51\x75\x69\x7A","\x73\x74\x61\x72\x74\x65\x64","\x73\x65\x74\x49\x74\x65\x6D","\x68\x31\x31","\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72","\x63\x68\x65\x63\x6B\x65\x64","\x63\x68\x65\x71","\x76\x61\x6C\x75\x65","\x73\x74\x75\x64\x6E\x61\x6D\x65","\x63\x6C\x67\x6E\x61\x6D\x65","\x61\x75\x64","\x74\x72\x69\x6D","","\x70\x6C\x61\x79","\x45\x6E\x74\x65\x72\x20\x79\x6F\x75\x72\x20\x6E\x61\x6D\x65","\x62\x6F\x72\x64\x65\x72","\x73\x6F\x6C\x69\x64\x20\x34\x70\x78\x20\x72\x65\x64","\x6C\x65\x6E\x67\x74\x68","\x45\x6E\x74\x65\x72\x20\x79\x6F\x75\x72\x20\x66\x75\x6C\x6C\x20\x6E\x61\x6D\x65","\x73\x74\x75\x64\x65\x6E\x74\x5F\x6E\x61\x6D\x65","\x74\x69\x6D\x65\x5F\x73\x74\x61\x72\x74","\x63\x6C\x6F\x63\x6B","\x6B\x65\x79\x70\x72\x65\x73\x73","\x73\x6F\x6C\x69\x64\x20\x33\x70\x78\x20\x67\x72\x65\x65\x6E","\x45\x6E\x74\x65\x72\x20\x79\x6F\x75\x72\x20\x49\x6E\x73\x74\x69\x74\x75\x74\x69\x6F\x6E\x20\x6E\x61\x6D\x65","\x45\x6E\x74\x65\x72\x20\x79\x6F\x75\x72\x20\x66\x75\x6C\x6C\x20\x49\x6E\x73\x74\x69\x74\x75\x74\x69\x6F\x6E\x20\x6E\x61\x6D\x65","\x63\x6F\x6C\x6F\x72","\x61\x70\x74","\x67\x72\x65\x65\x6E","\x41\x63\x63\x65\x70\x74\x20\x74\x68\x65\x20\x74\x65\x72\x6D\x73\x20\x61\x6E\x64\x20\x63\x6F\x6E\x64\x69\x74\x69\x6F\x6E\x73","\x72\x65\x64","\x71\x75\x69\x7A\x2D\x73\x74\x61\x72\x74\x2E\x68\x74\x6D\x6C","\x6E\x65\x77\x57\x69\x6E","\x77\x69\x64\x74\x68\x3D","\x61\x76\x61\x69\x6C\x57\x69\x64\x74\x68","\x2C\x68\x65\x69\x67\x68\x74\x3D","\x61\x76\x61\x69\x6C\x48\x65\x69\x67\x68\x74","\x6F\x70\x65\x6E","\x6F\x6E\x62\x65\x66\x6F\x72\x65\x75\x6E\x6C\x6F\x61\x64","\x72\x65\x6C\x6F\x61\x64","\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x41\x72\x65\x20\x79\x6F\x75\x20\x73\x75\x72\x65"];var x,y,z;var count=0,snd;var end=0,tab=0,keypress=0;var user,seconds=1200;var acct=0;var started;document[_0x882b[16]](_0x882b[0],function(){var _0x5a77xd=localStorage[_0x882b[2]](_0x882b[1]);user= localStorage[_0x882b[2]](_0x882b[3]);if(user>= 1){document[_0x882b[7]](_0x882b[6])[_0x882b[5]][_0x882b[4]]= _0x882b[8];document[_0x882b[7]](_0x882b[10])[_0x882b[9]]= _0x882b[11];alert(_0x882b[12]);started= 1;localStorage[_0x882b[14]](_0x882b[13],started)}else {started= 0;localStorage[_0x882b[14]](_0x882b[13],started)};user++;localStorage[_0x882b[14]](_0x882b[3],user);document[_0x882b[7]](_0x882b[15])[_0x882b[9]]= _0x5a77xd});function accepted(){if(acct== 0){document[_0x882b[7]](_0x882b[18])[_0x882b[17]]= true;acct= 1}else {document[_0x882b[7]](_0x882b[18])[_0x882b[17]]= false;acct= 0}}function start(){x= document[_0x882b[7]](_0x882b[20])[_0x882b[19]];y= document[_0x882b[7]](_0x882b[21])[_0x882b[19]];z= document[_0x882b[7]](_0x882b[18])[_0x882b[17]];snd= document[_0x882b[7]](_0x882b[22]);x= x[_0x882b[23]]();y= y[_0x882b[23]]();if(x== _0x882b[24]){snd[_0x882b[25]]();alert(_0x882b[26]);document[_0x882b[7]](_0x882b[20])[_0x882b[5]][_0x882b[27]]= _0x882b[28]}else {if(x[_0x882b[29]]< 5){snd[_0x882b[25]]();alert(_0x882b[30]);document[_0x882b[7]](_0x882b[20])[_0x882b[5]][_0x882b[27]]= _0x882b[28]}else {localStorage[_0x882b[14]](_0x882b[31],x);localStorage[_0x882b[14]](_0x882b[32],tab);localStorage[_0x882b[14]](_0x882b[33],seconds);localStorage[_0x882b[14]](_0x882b[34],keypress);document[_0x882b[7]](_0x882b[20])[_0x882b[5]][_0x882b[27]]= _0x882b[35];count++}};if(y[_0x882b[23]]()== _0x882b[24]){snd[_0x882b[25]]();alert(_0x882b[36]);document[_0x882b[7]](_0x882b[21])[_0x882b[5]][_0x882b[27]]= _0x882b[28]}else {if(y[_0x882b[29]]< 8){snd[_0x882b[25]]();alert(_0x882b[37]);document[_0x882b[7]](_0x882b[21])[_0x882b[5]][_0x882b[27]]= _0x882b[28]}else {document[_0x882b[7]](_0x882b[21])[_0x882b[5]][_0x882b[27]]= _0x882b[35];count++}};if(z== true){document[_0x882b[7]](_0x882b[39])[_0x882b[5]][_0x882b[38]]= _0x882b[40];count++}else {snd[_0x882b[25]]();alert(_0x882b[41]);document[_0x882b[7]](_0x882b[39])[_0x882b[5]][_0x882b[38]]= _0x882b[42]};if(count== 3){end= 1;document[_0x882b[7]](_0x882b[6])[_0x882b[5]][_0x882b[4]]= _0x882b[8];window[_0x882b[49]](_0x882b[43],_0x882b[44],_0x882b[45]+ screen[_0x882b[46]]+ _0x882b[47]+ screen[_0x882b[48]])};count= 0}window[_0x882b[50]]= function(_0x5a77x10){if(end== 1){window[_0x882b[52]][_0x882b[51]](false)}else {return _0x882b[53]}}
+var x,y,z;
+var count=0,snd;
+
+var end=0,tab=0,keypress=0;
+
+var user,seconds=1200;
+
+var acct=0;
+
+var started;
+
+document.addEventListener("DOMContentLoaded", function() {
+var pass=localStorage.getItem("email_id");
+user=localStorage.getItem("user_attempt");
+if(user>=1){
+    document.getElementById("btn-start").style.visibility="hidden";
+    document.getElementById("ready").innerHTML="You have already taken the Quiz";
+    alert("You have already attempted the Quiz");
+    started=1;
+    localStorage.setItem("started",started);
+}
+else{
+    started=0;
+    localStorage.setItem("started",started);
+}
+user++;
+localStorage.setItem("user_attempt",user);
+document.getElementById("h11").innerHTML=pass;
+});
+
+
+function accepted(){
+    if(acct==0){
+        document.getElementById("cheq").checked=true;
+        acct=1;
+    }
+    else{
+        document.getElementById("cheq").checked=false;
+        acct=0;
+    }
+}
+
+function start(){
+    x=document.getElementById("studname").value;
+    y=document.getElementById("clgname").value;
+    z=document.getElementById("cheq").checked;
+    snd=document.getElementById("aud");
+    x=x.trim();
+    y=y.trim();
+    if(x==""){
+        snd.play();
+        alert("Enter your name");
+        document.getElementById("studname").style.border="solid 4px red";
+    }
+    else if(x.length<5){
+        snd.play();
+        alert("Enter your full name");
+        document.getElementById("studname").style.border="solid 4px red";
+    }
+    else{
+        localStorage.setItem("student_name",x);
+        localStorage.setItem("time_start",tab);
+        localStorage.setItem("clock",seconds);
+        localStorage.setItem("keypress",keypress);
+        document.getElementById("studname").style.border="solid 3px green";
+        count++;
+    }
+    if(y.trim()==""){
+        snd.play();
+        alert("Enter your Institution name");
+        document.getElementById("clgname").style.border="solid 4px red";
+    }
+    else if(y.length<8){
+        snd.play();
+        alert("Enter your full Institution name");
+        document.getElementById("clgname").style.border="solid 4px red";
+    }
+    else{
+        localStorage.setItem("clg_name",y);
+        document.getElementById("clgname").style.border="solid 3px green";
+        count++;
+    }
+    if(z==true){
+        document.getElementById("apt").style.color="green";
+        count++;
+    }
+    else{
+        snd.play();
+        alert("Accept the terms and conditions");
+        document.getElementById("apt").style.color="red";
+    }
+    if(count==3){
+        end=1;
+        document.getElementById("btn-start").style.visibility="hidden";
+        window.open("quiz-start.html","newWin", "width="+screen.availWidth+",height="+screen.availHeight);
+    }
+    count=0;
+}
+
+window.onbeforeunload = function(e) {
+    if(end==1){
+      window.location.reload(false); 
+    }
+    else{
+        return "Are you sure";
+    }
+};
