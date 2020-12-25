@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-1">
         <meta name="viewport" content="width=device-width , initial-scale = 1.0" >
+        <link rel="shortcut icon" type="image/png" href="image/fav-icon.png">
         <link rel="stylesheet" href="css/quiz-congrats.css">
        
         <title>QuizzieMania - Congratulations</title>
@@ -36,6 +37,9 @@
         document.addEventListener("DOMContentLoaded", function() {
         pass_2=localStorage.getItem("student_name");
         document.getElementById("qiuz_header").innerHTML="QuizzieMania - Congratulations "+pass_2;
+        setTimeout(function(){
+            alert("You will recieve your Certificate through your Email within an hour.\nKeep checking your Spam folder too.");
+        }, 1000);
         });
 
         document.addEventListener('contextmenu',function(e) {
